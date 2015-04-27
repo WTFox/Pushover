@@ -12,9 +12,12 @@ except ImportError:
 import json
 import os
 
+
 PUSHOVER_API = "https://api.pushover.net/1/"
 
+
 class PushoverError(Exception): pass
+
 
 def pushover(**kwargs):
     assert 'message' in kwargs
